@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="scss/all.css">
+    <title>js最終作業-高雄旅遊網</title>
+</head>
+
+<body>
+    <div class="header bgc-grey">
+        <div class="container-fluid m-auto px-0 pb-1">
+            <div class="banner bg-cover d-flex flex-column align-items-center m-auto no-gutter">
+                <h1 class="title">高雄旅遊資訊</h1>
+                <select name="" id="" class="selectArea px-2">
+                    <option value="">--請選擇行政區--</option>
+                </select>
+            </div>
+            <div class="d-flex hotZone flex-column no-gutter">
+                <h2 class="hotZone-title">熱門行政區</h2>
+                <div class="row hotZone-content no-gutter justify-content-md-start justify-content-around">
+                    <button class="col-md-2 col-sm-5 col-5 btn bgc-purple hotZone-btn">三民區</button>
+                    <button class="col-md-2 col-sm-5 col-5 btn bgc-orange hotZone-btn">苓雅區</button>
+                    <button class="col-md-2 col-sm-5 col-5 btn bgc-yellow hotZone-btn">岡山區</button>
+                    <button class="col-md-2 col-sm-5 col-5 btn bgc-blue hotZone-btn">美濃區</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main bgc-grey">
+        <div class="pt-5" style="position: relative;">
+            <hr class="dotted-line">
+            <span class="material-icons down-icon">
+                arrow_drop_down
+            </span>
+        </div>
+        <div class="container-fluid p-0">
+            <h2 class="areaName c-blue text-center">全部景點</h2>
+            <div class="row justify-content-between attractions-list no-gutter">
+                <!-- <div class="attractions row">
+                    <div class="attractions-img bg-cover col-12"
+                        style="background-image: url(https://khh.travel/FileArtPic.ashx?id=1846&w=1280&h=960);">
+                        <div class="d-flex h-100 justify-content-between align-items-end attractions-name-area">
+                            <span class="attractions-name"></span>
+                            <span class="attractions-area"></span>
+                        </div>
+                    </div>
+                    <div class="attractions-time d-flex align-items-center col-12">
+                        <img class="attractions-icon" src="images/icons_clock.png" alt=""><span>週二至週日10:00-18:00，每週一公休</span>
+                    </div>
+                    <div class="attractions-address col-12"><img class="attractions-icon" src="images/icons_pin.png" alt=""><span>高雄市三民區建國二路318號</span></div>
+                    <div class="attractions-tel col-5"><img class="attractions-icon" src="images/icons_phone.png" alt=""><span>886-7-2363357</span></div>
+                    <div class="attractions-ticket col-6"><img class="attractions-icon" src="images/icons_tag.png" alt=""><span>免費參觀</span></div>
+                </div> -->
+            </div>
+            <div class="page-list">
+                <ul class="row pageSwitch justify-content-center mb-0 py-3 px-0 no-gutter">
+                    <li class="pagePrev">< prev</li>
+                    <li class="pageNumber active">1</li>
+                    <li class="pageNumber">2</li>
+                    <li class="pageNext">next ></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer bgc-blue d-flex flex-column align-items-center">
+        <p class="mb-0 mb-2">高雄旅遊網</p>
+        <p class="c-yellow">資料來源：高雄市政府</p>
+    </div>
+    <img src="images/btn_goTop.png" alt="" class="goTop">
+
+    <!--  -->
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="javascript/all.js"></script>
+</body>
+
+</html>

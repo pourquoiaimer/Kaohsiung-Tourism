@@ -1,0 +1,300 @@
+.bgc-purple {
+  background-color: #8A82CC;
+}
+
+.bgc-orange {
+  background-color: #FFA782;
+}
+
+.bgc-yellow {
+  background-color: #F5D005;
+}
+
+.bgc-blue {
+  background-color: #559AC8;
+}
+
+.bgc-grey {
+  background-color: #f7f7f7;
+}
+
+.c-purple {
+  color: #8A82CC;
+}
+
+.c-orange {
+  color: #FFA782;
+}
+
+.c-yellow {
+  color: #F5D005;
+}
+
+.c-blue {
+  color: #559AC8;
+}
+
+.c-grey {
+  color: #f7f7f7;
+}
+
+.bg-cover {
+  background-size: cover;
+  background-position: center center;
+}
+
+.no-gutter {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+body {
+  max-width: 1024px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+@media (min-width: 1024px) {
+  body {
+    width: 1024px;
+  }
+}
+
+html {
+  position: relative;
+}
+
+.test {
+  background-color: #FFA782;
+  height: 100px;
+  border: 1px solid black;
+}
+
+.banner {
+  background-image: url(../images/banner-sm.png);
+  height: 380px;
+  max-width: 1024px;
+}
+
+.title {
+  font-size: 40px;
+  color: #fff;
+  padding-top: 90px;
+}
+
+.selectArea {
+  margin-top: 92px;
+  width: 45%;
+  height: 48px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 3px solid #FFFFFF;
+  border-radius: 3px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: url(../images/icons_down.png) no-repeat 97% center rgba(255, 255, 255, 0.7);
+}
+
+.hotZone {
+  max-width: 800px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-top: -30px;
+}
+
+.hotZone .hotZone-title {
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 18px;
+  line-height: 1;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .hotZone .hotZone-title {
+    text-align: left;
+    padding-left: 26px;
+    font-size: 18px;
+    margin-bottom: 14px;
+  }
+}
+
+.hotZone .hotZone-content {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.hotZone .hotZone-content .hotZone-btn {
+  height: 42px;
+  font-size: 20px;
+  color: white;
+  line-height: 1.3;
+  border: none;
+  margin-bottom: 18px;
+}
+
+@media (min-width: 768px) {
+  .hotZone .hotZone-content .hotZone-btn {
+    margin-right: 30px;
+  }
+}
+
+.dotted-line {
+  max-width: 900px;
+  height: 1px;
+  margin-top: 0;
+  background: linear-gradient(to right, #559AC8, #559AC8 4px, #f7f7f7 4px, #f7f7f7);
+  background-size: 10px 100%;
+  border: none;
+}
+
+.down-icon {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid #559AC8;
+  color: #559AC8;
+  bottom: -13px;
+  right: calc(50% - 13px);
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.down-icon:hover {
+  background-color: #559AC8;
+  color: white;
+}
+
+.areaName {
+  font-size: 36px;
+  margin-top: 76px;
+  margin-bottom: 24px;
+}
+
+.attractions-list {
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+.attractions {
+  max-width: 464px;
+  background-color: #fff;
+  margin-bottom: 18px;
+  padding: 0;
+  font-size: 16px;
+}
+
+@media (max-width: 992px) {
+  .attractions {
+    margin: 18px auto;
+  }
+}
+
+@media (min-width: 320px) {
+  .attractions {
+    width: 464px;
+  }
+}
+
+.attractions .attractions-img {
+  width: auto;
+  height: 155px;
+  margin-bottom: 16px;
+  color: #fff;
+  padding-left: 24px;
+  padding-right: 24px;
+  text-shadow: -0.5px -0.5px black, 0.5px -0.5px black, -0.5px 0.5px black, 0.5px 0.5px black;
+}
+
+.attractions .attractions-img .attractions-name {
+  font-size: 24px;
+  margin-bottom: 14px;
+}
+
+.attractions .attractions-img .attractions-area {
+  line-height: 36px;
+  margin-bottom: 14px;
+}
+
+.attractions .attractions-icon {
+  margin-right: 10px;
+  width: 15px;
+}
+
+.attractions .attractions-time {
+  padding-left: 20px;
+  padding-right: 0;
+  margin-bottom: 16px;
+}
+
+.attractions .attractions-address {
+  padding-left: 20px;
+  padding-right: 0;
+  margin-bottom: 16px;
+}
+
+.attractions .attractions-tel {
+  padding-left: 20px;
+  padding-right: 0;
+  margin-bottom: 22px;
+}
+
+.pageSwitch {
+  list-style: none;
+  font-size: 14px;
+}
+
+.pageSwitch .pagePrev {
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.pageSwitch .pagePrev:hover {
+  font-weight: bold;
+}
+
+.pageSwitch .pageNext {
+  margin-left: 12px;
+  cursor: pointer;
+}
+
+.pageSwitch .pageNext:hover {
+  font-weight: bold;
+}
+
+.pageSwitch .pageNumber {
+  margin-right: 12px;
+  margin-left: 12px;
+  border-radius: 50%;
+  padding-left: 5px;
+  padding-right: 5px;
+  cursor: pointer;
+}
+
+.pageSwitch .pageNumber:hover {
+  font-weight: bold;
+  background-color: #F5D005;
+}
+
+.pageSwitch .pageNumber.active {
+  font-weight: bold;
+  background-color: #F5D005;
+}
+
+.footer {
+  height: 90px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-size: 14px;
+  color: white;
+}
+
+.goTop {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  cursor: pointer;
+}
