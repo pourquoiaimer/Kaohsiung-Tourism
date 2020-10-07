@@ -1,4 +1,4 @@
-# Kaohsiung-Tourism 高雄旅遊網 
+# Kaohsiung-Tourism 高雄旅遊資訊
 ## 六角學院 javascrpt入門篇 最終作業之一
 
 ## 網頁呈現
