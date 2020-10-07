@@ -2,12 +2,13 @@
 ## 六角學院 javascrpt入門篇 最終作業之一
 
 **使用技術包括**
-1.HTML
-2.CSS
-3.JaveScript
-4.JQuery
-5.Bootstrap4 (方便響應式的操作)
+* HTML
+* CSS
+* JaveScript
+* JQuery (捲軸滾動及監測部份)
+* Bootstrap4 (方便製作響應式)
 
 
+本頁面主要練習JS的使用，並嘗試用AJAX去撈取資料做練習  
+頁面編排部份使用了Bootstrap的grid，方便達到響應式的效果  
 
-主要練習JS的使用，在資料的撈取上，基於用AJAX的方式做撈取，
