@@ -5,8 +5,8 @@
   <https://pourquoiaimer.github.io/Kaohsiung-Tourism/>
 
 **使用技術包括**
-* HTML
-* CSS
+* HTML/CSS
+* SCSS
 * JaveScript
 * JQuery (捲軸滾動及監測部份)
 * Bootstrap4 (方便製作響應式)
