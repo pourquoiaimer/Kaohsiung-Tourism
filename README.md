@@ -15,4 +15,4 @@
   本頁面主要練習JS的使用，並嘗試用AJAX去撈取資料做練習，頁面編排上使用了Bootstrap，方便達到響應式的效果，其中捲軸滾動部份稍微使用了JQ的語法 
 
 ## 聲明
-  練習設計稿來自 [六角學院 - JavaScript 入門篇 - 學徒的試煉](https://www.hexschool.com/courses/javascript.html)
+  練習設計稿來自 [六角學院 - JavaScript 入門篇 - 學徒的試煉](https://hexschool.github.io/JavaScript_HomeWork/)
