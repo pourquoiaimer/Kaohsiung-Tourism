@@ -15,11 +15,18 @@ const selectPage = document.querySelector('.pageSwitch'); //下方切換頁面�
 
 //*************************監聽對象*************************//
 selectArea.addEventListener('change', function () { //監聽地區選項是否被改變
-  areaData = getAreaData(); //得出本次的areaData
-  countPageInner(areaData); //算出頁數並填入下方區域
-  let nowData = choiceNowData(areaData,1); //此處用1去代替nowPage，因為永遠從第一頁開始
-  dataInner(nowData); //組成字串並填入
-  return nowPage = 1; //將nowPage重製為1
+  if (selectArea.value === ""){
+    areaName.textContent = "";
+    selectPage.innerHTML = "";
+    attractionsList.innerHTML = "";
+    return nowPage = 1; //將nowPage重製為1
+  }else{
+    areaData = getAreaData(); //得出本次的areaData
+    countPageInner(areaData); //算出頁數並填入下方區域
+    let nowData = choiceNowData(areaData,1); //此處用1去代替nowPage，因為永遠從第一頁開始
+    dataInner(nowData); //組成字串並填入
+    return nowPage = 1; //將nowPage重製為1
+  }
 }, false); //
 hotZoneContent.addEventListener('click', hotZoneBtnChange, false); //熱門地區區塊是否被點擊，fuction中已包含取資料排字串及填入
 selectPage.addEventListener('click', changePage, false); //監聽下方的切換頁面欄位，fuction中已包含取資料排字串及填入
@@ -31,6 +38,7 @@ let nowPage = 1 || changePage; //現在頁面位置
 let areaData = "" || getAreaData; //當前區域的資料，儲存出來方便換頁操作
 const prevText = '<li class="pagePrev">< prev</li>'; //定義往前按鈕的字串
 const nextText = '<li class="pageNext">next ></li>'; //定義往後按鈕的字串
+const noData = "";
 
 
 
@@ -84,17 +92,18 @@ function getAreaData() {
   let len = data.length;
   let areaData = [];
   //選出符合條件的資料放入areaData
-  if (selectArea.value == "全部景點") {
+  if (selectArea.value === "全部景點") {
     for (let i = 0; len > i; i++) {
       areaData.push(data[i]);
     }
   } else {
     for (let i = 0; len > i; i++) {
-      if (data[i].Zone == selectArea.value) {
+      if (data[i].Zone === selectArea.value) {
         areaData.push(data[i]);
       }
     }
   }//這個時候的areaData就是這次我們要取出的資料了
+  console.log(areaData);
   return areaData;
 }
 ///////////////////////////////////////////
