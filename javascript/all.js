@@ -60,10 +60,6 @@ xhr.onload = function returnOption() {//傳回資料後優先將所有行政區�
     str += `<option value="${area[i]}">${area[i]}</option>`;
   }
   selectArea.innerHTML = `<option value="">--請選擇行政區--</option><option value="全部景點">全部景點</option>${str}`//將所有行政區填入banner中的選擇框內
-  areaData = getAreaData(); //得出本次的areaData
-  countPageInner(areaData); //算出頁數並填入下方區域
-  let nowData = choiceNowData(areaData,1);
-  dataInner(nowData); //組成字串並填入
   return nowPage = 1;
 }
 ///////////////////////////////////////////
