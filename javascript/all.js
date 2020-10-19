@@ -48,7 +48,7 @@ xhr.onload = function returnOption() {//傳回資料後優先將所有行政區�
   let data = getDataCorrect(); //取得xhr中的所需資料
   let len = data.length;
   let area = [];
-  for (var i = 0; len > i; i++) {
+  for (let i = 0; len > i; i++) {
     area.push(data[i].Zone);//將area變成所有項目所在區域的陣列
   }
   area = area.filter(function (element, index, self) {
@@ -56,7 +56,7 @@ xhr.onload = function returnOption() {//傳回資料後優先將所有行政區�
   });//去掉area中的重複項
   let str = "";
   let areaLen = area.length;
-  for (var i = 0; areaLen > i; i++) {
+  for (let i = 0; areaLen > i; i++) {
     str += `<option value="${area[i]}">${area[i]}</option>`;
   }
   selectArea.innerHTML = `<option value="">--請選擇行政區--</option><option value="全部景點">全部景點</option>${str}`//將所有行政區填入banner中的選擇框內
@@ -260,8 +260,8 @@ $('.down-icon').click(function (event) {
 
 //JQ//*****滾動監測backtop按鈕是否出現////
 $(window).scroll(function () {
-  var scrollPos = $(window).scrollTop();
-  var windowHeight = $(window).height();
+  let scrollPos = $(window).scrollTop();
+  let windowHeight = $(window).height();
   if (scrollPos >= (windowHeight * 0.8)) {
     $('.goTop').show();
   } else {
