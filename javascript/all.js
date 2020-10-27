@@ -14,19 +14,13 @@ const selectPage = document.querySelector('.pageSwitch'); //下方切換頁面�
 
 
 //*************************監聽對象*************************//
-selectArea.addEventListener('change', function () { //監聽地區選項是否被改變
-  if (selectArea.value === ""){
-    areaName.textContent = "";
-    selectPage.innerHTML = "";
-    attractionsList.innerHTML = "";
-    return nowPage = 1; //將nowPage重製為1
-  }else{
+selectArea.addEventListener('change', ()=> { //監聽地區選項是否被改變
     areaData = getAreaData(); //得出本次的areaData
     countPageInner(areaData); //算出頁數並填入下方區域
     let nowData = choiceNowData(areaData,1); //此處用1去代替nowPage，因為永遠從第一頁開始
     dataInner(nowData); //組成字串並填入
+    document.querySelector('.none').disabled="true";
     return nowPage = 1; //將nowPage重製為1
-  }
 }, false); //
 hotZoneContent.addEventListener('click', hotZoneBtnChange, false); //熱門地區區塊是否被點擊，fuction中已包含取資料排字串及填入
 selectPage.addEventListener('click', changePage, false); //監聽下方的切換頁面欄位，fuction中已包含取資料排字串及填入
@@ -59,7 +53,7 @@ xhr.onload = function returnOption() {//傳回資料後優先將所有行政區�
   for (let i = 0; areaLen > i; i++) {
     str += `<option value="${area[i]}">${area[i]}</option>`;
   }
-  selectArea.innerHTML = `<option value="">--請選擇行政區--</option><option value="全部景點">全部景點</option>${str}`//將所有行政區填入banner中的選擇框內
+  selectArea.innerHTML = `<option value="" class="none">--請選擇行政區--</option><option value="全部景點">全部景點</option>${str}`//將所有行政區填入banner中的選擇框內
   return nowPage = 1;
 }
 ///////////////////////////////////////////

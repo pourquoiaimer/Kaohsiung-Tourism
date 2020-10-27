@@ -18,22 +18,16 @@ var selectPage = document.querySelector('.pageSwitch'); //下方切換頁面欄�
 
 selectArea.addEventListener('change', function () {
   //監聽地區選項是否被改變
-  if (selectArea.value === "") {
-    areaName.textContent = "";
-    selectPage.innerHTML = "";
-    attractionsList.innerHTML = "";
-    return nowPage = 1; //將nowPage重製為1
-  } else {
-    areaData = getAreaData(); //得出本次的areaData
+  areaData = getAreaData(); //得出本次的areaData
 
-    countPageInner(areaData); //算出頁數並填入下方區域
+  countPageInner(areaData); //算出頁數並填入下方區域
 
-    var nowData = choiceNowData(areaData, 1); //此處用1去代替nowPage，因為永遠從第一頁開始
+  var nowData = choiceNowData(areaData, 1); //此處用1去代替nowPage，因為永遠從第一頁開始
 
-    dataInner(nowData); //組成字串並填入
+  dataInner(nowData); //組成字串並填入
 
-    return nowPage = 1; //將nowPage重製為1
-  }
+  document.querySelector('.none').disabled = "true";
+  return nowPage = 1; //將nowPage重製為1
 }, false); //
 
 hotZoneContent.addEventListener('click', hotZoneBtnChange, false); //熱門地區區塊是否被點擊，fuction中已包含取資料排字串及填入
@@ -74,7 +68,7 @@ xhr.onload = function returnOption() {
     str += "<option value=\"".concat(area[_i], "\">").concat(area[_i], "</option>");
   }
 
-  selectArea.innerHTML = "<option value=\"\">--\u8ACB\u9078\u64C7\u884C\u653F\u5340--</option><option value=\"\u5168\u90E8\u666F\u9EDE\">\u5168\u90E8\u666F\u9EDE</option>".concat(str); //將所有行政區填入banner中的選擇框內
+  selectArea.innerHTML = "<option value=\"\" class=\"none\">--\u8ACB\u9078\u64C7\u884C\u653F\u5340--</option><option value=\"\u5168\u90E8\u666F\u9EDE\">\u5168\u90E8\u666F\u9EDE</option>".concat(str); //將所有行政區填入banner中的選擇框內
 
   return nowPage = 1;
 }; ///////////////////////////////////////////
